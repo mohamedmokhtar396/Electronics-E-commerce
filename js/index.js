@@ -61,14 +61,14 @@ let welcomeBox=document.getElementById("sell")
 if (checkLoggedIn.userRole=='seller') {
     let welcomemsg=`
                 <h1>Welcome <span style="color: #eb5e28; text-transform: capitalize;"> ${checkLoggedIn.name.split(" ")[0]}</span> <br> <span style="margin-left: 2rem;">Add Your Products</span></h1>
-                <a href="./addProduct.html"> <button style="width:100%;">Add Product</button> </a>
+                <a href="./html/addProduct.html"> <button style="width:100%;">Add Product</button> </a>
                 `
     welcomeBox.innerHTML=welcomemsg
     
 }else{
     let welcomemsg=`
                 <h1>Welcome <span style="color: #eb5e28; text-transform: capitalize;"> ${checkLoggedIn.name.split(" ")[0]}</span> <br> <span style="margin-left: 2rem;">Discover Products</span></h1>
-                <a href="./products.html"> <button style="width:100%;">Discover</button> </a>
+                <a href="./html/products.html"> <button style="width:100%;">Discover</button> </a>
                 `
     welcomeBox.innerHTML=welcomemsg
     document.querySelector('.seller-icon').style.display='none'

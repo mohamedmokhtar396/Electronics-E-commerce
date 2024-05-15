@@ -59,7 +59,7 @@ let userPhone
                 last_login: dt,
               });
   
-              popupError('Logged In Successfully!','#74e555','./index.html');
+              popupError('Logged In Successfully!','#74e555','../index.html');
               
   
   
