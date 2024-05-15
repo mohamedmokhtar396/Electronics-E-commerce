@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find By Serial</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/find.css">
+</head>
+<body>
+    <div class="home">
+        
+        <nav>
+            <a href="./WishList.html" id="wish-items" style="text-decoration: none;color: white;">
+                <i class="fas fa-heart fa-" ></i>
+              </a>
+              <a href="./Cart.html" id="cart-items" style="text-decoration: none;color: white;">
+                <i class="fas fa-cart-shopping" ></i>
+              </a>
+              
+              <span id="wish-items-count">0</span>
+              <span id="cart-items-count">0</span>
+  
+            <ul>
+                <li><a href="./index.html"><i class="fa-solid fa-house fa-xl"></i>  </a></li>
+                <li><a href="./products.html">Products</a></li>
+                
+            </ul>
+            
+            <div class="para">
+                <p>Shop</p>
+                <p style="color: #eb5e28; ">Now</p>
+                <i class="fas fa-cart-shopping " style="color: #eb5e28;"></i>
+            </div>
+            
+            <ul id="sub" style="position: relative;">
+                
+                <li><a href="./contact.html">Contact US</a></li>
+                <li><a href="./login.html" id="loginBtn">Log In</a></li>
+                <li><a href="./login.html" id="logoutBtn" style="display: none;">Log Out   <i class="fas fa-sign-out fa-xl" ></i></a></li>
+               
+            </ul>
+        </nav>
+  
+        </div>
+
+
+        <div class="container">
+            <div class="btns">
+                <button id="find" class="clicked">Find</button>
+                <button id="add">Add</button>
+            </div>
+            <form id="find-form">
+                <div class="input-container">
+                    <label for="serial-number">Enter Serial Number:</label>
+                    <input type="text" id="search-serial-number" placeholder="Serial Number">
+                </div>
+                <button type="submit">Find</button>
+            </form>
+            <!-- Add a div for displaying the result -->
+        <div id="result"></div>
+            <form id="add-form" class="hidden">
+                
+                <div class="input-container">
+                    <input type="text" id="name" placeholder="Enter Name">
+                </div>
+                <div class="input-container">
+                    <input type="text" id="phone" placeholder="Enter Phone">
+                </div>
+                <div class="input-container">
+                    <input type="text" id="serial-number" placeholder="Enter Serial Number">
+                </div>
+                <div class="input-container">
+                    <input type="text" id="description" placeholder="Description">
+                </div>
+                <button type="submit">Add</button>
+            </form>
+
+            
+        </div>
+        <!-- HTML for displaying serial numbers and fields on cards -->
+        <div id="serialNumbersContainer" class="serial-numbers-container">
+            <!-- Serial number cards will be dynamically added here -->
+        </div>
+
+        <!-- Popup div for editing -->
+        
+<div id="editPopup" class="edit-popup">
+    <span style="font-size: 22px;" class="close-btn" >&times;</span>
+    <h2>Edit Data</h2>
+    <form id="editForm">
+        <label for="editName">Name:</label>
+        <input type="text" id="editName" name="editName" required><br>
+        <label for="editPhone">Phone:</label>
+        <input type="text" id="editPhone" name="editPhone" required><br>
+        <label for="editDescription">Description:</label>
+        <input type="text" id="editDescription" name="editDescription" required><br>
+        <input type="submit" value="Save">
+    </form>
+</div>
+
+
+        <div class="popup" id="popup"></div>
+
+
+        <!-- <script src="../js/checkLogIn.js"></script> -->
+        <script type="module" src="../js/WishAndCartCount.js"></script>
+        <script type="module" src="../js/find.js"></script>
+</body>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+</html>

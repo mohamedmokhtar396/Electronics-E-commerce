@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#add-form{
+    width: 32rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    border-left: 4px solid var(--pcolor);
+    border-top: 4px solid var(--pcolor);
+    border-bottom: 4px solid var(--scolor);
+    border-right: 4px solid var(--scolor);
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid var(--pcolor); /* First color */
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--pcolor);
+    color: var(--tcolor); /* Third color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+button:hover {
+    color: var(--pcolor); /* First color */
+    background-color: var(--scolor); /* Third color */
+    
+}
+
+.hidden {
+    display: none;
+}
+.btns{
+display: flex;
+gap: 2rem;
+
+}
+.btns{
+    /* height: 2px; */
+
+}
+.clicked{
+    color: var(--pcolor); /* First color */
+    background-color: var(--scolor); /* Third color */
+
+}
+
+
+
+
+
+/* CSS for table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+td{
+    width: 80%;
+    word-wrap:break-word ;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+
+/* edit container */
+/* CSS for serial number cards */
+.serial-number-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.serial-number-card h3 {
+    margin-top: 0;
+}
+
+.serial-number-card p {
+    margin: 5px 0;
+}
+
+/* CSS for the popup div */
+.edit-popup {
+    display: none;
+    width: 32rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.edit-popup h2 {
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.edit-popup input[type="submit"]{
+    /* width: 6rem; */
+    padding-inline: 1.5rem;
+    text-align: center;
+    padding-block: 1rem;
+    border: none;
+    background-color: var(--pcolor);
+    color: var(--tcolor);
+    font-size: 18px;
+    font-weight:700 ;
+    transition: 0.5s;
+}
+.edit-popup input[type="submit"]:hover{
+    color: var(--pcolor);
+    background-color: var(--scolor);
+
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogIn</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+  </head>
+  <body>
+   
+
+    <div class="home">
+
+      <nav>
+          
+          <div class="para">
+              <p>Shop</p>
+              <p style="color:var(--pcolor); ">Now</p>
+              <i class="fas fa-cart-shopping " style="color:var(--pcolor);"></i>
+          </div>
+          
+          
+      </nav>
+
+      </div>
+      <!-- ************************* -->
+      <!-- ************************* -->
+      <!-- ************************* -->
+
+      
+        <div class="login-form">
+          <h1>LogIn</h1>
+          <form>
+            <label>Email</label>
+            <input type="email" name="email" id="email" placeholder="username@gmail.com"/>
+            <p style="color: red"></p>
+            <!-- <br> -->
+
+            <label>Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" />
+            <p style="color: red"></p>
+            <a href="./forgot-password.html" style="align-self: self-start; color: var(--pcolor); font-size: 0.75rem; font-weight: 500; text-decoration: underline; cursor: pointer; "
+              >Forgot Password?</a>
+            <!-- <br> -->
+          </form>
+          <button id="submit">LogIn</button>
+          <a href="./signup.html" class="new-user">New User? Create New Account</a>
+        </div>
+      
+
+    <div class="popup" id="popup"></div>
+
+    <!-- <script src="../js/login.js"></script> -->
+
+    <script type="module" src="../js/firebase.js"></script>
+    <script type="module" src="../js/login.js"></script>
+    <!-- <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+      import {
+        getDatabase,
+        set,
+        ref,
+        update,
+      } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js";
+      import {
+        getAuth,
+        signInWithEmailAndPassword,
+      } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyARcjiwe7e45aoxZIqLkcVF4Pno7BYP_8o",
+        authDomain: "login-6211f.firebaseapp.com",
+        projectId: "login-6211f",
+        storageBucket: "login-6211f.appspot.com",
+        messagingSenderId: "987037124343",
+        appId: "1:987037124343:web:4c7872278abe5f3a1ef5f2",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const database = getDatabase(app);
+      const auth = getAuth();
+
+      let submit = document.getElementById("submit");
+      submit.addEventListener("click", (e) => {
+        // let name=document.getElementById('name')
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+
+        signInWithEmailAndPassword(auth, email, password)
+          .then((userCredential) => {
+            const user = userCredential.user;
+
+            const dt = new Date();
+            update(ref(database, "users/" + user.uid), {
+              last_login: dt,
+            });
+
+            document.getElementById("popup").style.backgroundColor = "#74e555";
+            document.getElementById("popup").style.visibility = "visible";
+            document.getElementById("popup").innerHTML="user logged In successfully"
+            setTimeout(() => {
+              document.getElementById("popup").style.visibility = "hidden";
+              window.location.href = "./home.html";
+            }, 2000);
+
+
+
+            // alert("user logged In successfully");
+          })
+          .catch((error) => {
+            const errorcode = error.code;
+            const errormsg = error.message;
+            // alert(errormsg);
+            document.getElementById("popup").style.backgroundColor = "#e55555";
+            document.getElementById("popup").style.visibility = "visible";
+            document.getElementById("popup").innerHTML = errormsg;
+            setTimeout(() => {
+              document.getElementById("popup").style.visibility = "hidden";
+            }, 3000);
+          });
+      });
+    </script> -->
+  </body>
+</html>

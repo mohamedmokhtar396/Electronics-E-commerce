@@ -1,0 +1,1 @@
+Open Project with Live server extension in vs code

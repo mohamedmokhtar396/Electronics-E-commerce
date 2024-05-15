@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-Info</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/singleProduct.css">
+</head>
+<body>
+    <div class="home">
+        
+        <nav>
+            <a href="#" id="wish-items" style="text-decoration: none;color: white;">
+                <i class="fas fa-heart fa-" ></i>
+              </a>
+              <a href="./Cart.html" id="cart-items" style="text-decoration: none;color: white;">
+                <i class="fas fa-cart-shopping" ></i>
+              </a>
+              
+              <span id="wish-items-count">0</span>
+              <span id="cart-items-count">0</span>
+  
+            <ul>
+                <li><a href="./index.html"><i class="fa-solid fa-house fa-xl"></i>  </a></li>
+                <li><a href="./products.html">Products</a></li>
+                
+            </ul>
+            
+            <div class="para">
+                <p>Shop</p>
+                <p style="color: #eb5e28; ">Now</p>
+                <i class="fas fa-cart-shopping " style="color: #eb5e28;"></i>
+            </div>
+            
+            <ul id="sub" style="position: relative;">
+                
+                <li><a href="./contact.html">Contact US</a></li>
+                <li><a href="./login.html" id="loginBtn">Log In</a></li>
+                <li><a href="./login.html" id="logoutBtn" style="display: none;">Log Out   <i class="fas fa-sign-out fa-xl" ></i></a></li>
+               
+            </ul>
+        </nav>
+  
+        </div>
+
+
+    <div class="productInfo">
+        
+    </div>    
+
+    
+
+    
+    
+    
+
+
+
+
+
+    <div class="comments-section">
+        <h2 style="color: var(--pcolor);">Comments</h2>
+        <div class="comments-list">
+            <!-- Comments will be dynamically added here -->
+        </div>
+        <textarea id="commentInput" placeholder="Add a comment"></textarea>
+        <button id="submitComment">Submit</button>
+    </div>
+    
+    <div class="popup" id="popup"></div>
+
+
+    
+
+    <script type="module" src="../js/checkLogIn.js"></script>
+    <script type="module" src="../js/WishAndCartCount.js"></script>
+    <script type="module" src="../js/singleProduct.js"></script>
+</body>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+</html>

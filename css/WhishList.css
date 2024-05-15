@@ -1,0 +1,20 @@
+nav{
+  margin-bottom: 15rem;
+}
+.home {
+  width: 100%;
+  height: 100vh;
+}
+
+.products{
+  top: 25%;
+}
+.favlist{
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--pcolor);
+}

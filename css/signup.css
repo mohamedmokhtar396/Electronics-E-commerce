@@ -1,0 +1,92 @@
+.para{
+  width: 20%;
+  /* height: 90px; */
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* top: 20%; */
+  left: 50%;
+  font-size: 52px;
+  color: #ffffff;
+  /* overflow: hidden; */
+  transform: translate(-50%, -25%);
+}
+
+
+.signup-form {
+  margin: auto;
+  margin-top: 1.5rem;
+  width: 40.0625rem;
+  height: 85vh;
+  /* padding-top: 0.44rem; */
+  border-radius: 34px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 5px 10px 5px 5px var(--pcolor);
+  backdrop-filter: blur(15px);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  /* gap: 1.5rem; */
+}
+.signup-form h1{
+  padding: 0.5rem;
+  color: var(--pcolor);
+  border-bottom:  6px solid var(--tcolor);
+}
+.signup-form form {
+  margin-top: 1rem;
+  height: 89vh;
+  display: flex;
+  flex-direction: column;
+}
+.signup-form form input {
+  direction: ltr;
+  text-align: left;
+  width: 25rem;
+  font-size: var(--para);
+  margin-bottom: 0.5rem;
+}
+
+
+.signup-form form label{
+color: var(--pcolor);
+width: 100%;
+font-size: var(--para);
+font-weight: 700;
+}
+
+.signup-form form select option{
+  background-color: var(--scolor);
+  color: var(--pcolor);
+  font-size: var(--para);
+}
+
+.new-user {
+  margin-bottom: 0.5rem;
+  color: var(--pcolor);
+  font-size: 1.375rem;
+  font-weight: 800;
+  /* border-bottom: 0.02rem solid var(--scolor); */
+  transition: 0.5s;
+}
+.new-user:hover {
+  color: var(--tcolor);
+}
+.signup-form button{
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  background-color: var(--pcolor);
+  color: var(--tcolor);
+  border-radius: 2rem;
+  font-size: var(--header);
+  font-weight: 700;
+  
+}
+.signup-form button:hover{
+  color: var(--pcolor);
+  background-color: var(--tcolor);
+
+}
+

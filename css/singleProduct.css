@@ -1,0 +1,153 @@
+.productInfo{
+    margin-top: 5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 33px;
+    margin-bottom: 2rem;
+
+}
+
+ 
+  .card {
+    width: 90%;
+    height: auto;
+    padding-block: 3rem;
+    box-shadow: 1px 1px 20px 1px rgb(122, 122, 122);
+    /* border: 1px solid #eb5e28; */
+    border-radius: 20px;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 2rem;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+  }
+
+
+  .card-img  {
+    min-width: 20%;
+      max-width: 40%;
+      height: 25rem;
+      position: relative;
+      
+    }
+    .card-img img {
+      width: 100%;
+      height: 100%;
+  }
+  .icons-card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 22px;
+
+  }
+  .card-content {
+    display: flex;
+    flex-direction: column;
+ 
+    width: 50%;
+    text-align: left;
+    gap: 2rem;
+
+    
+  }
+ 
+  .cards i {
+      position: absolute;
+      top: -1rem;
+      right: 10px;
+  }
+  /* .card:hover {
+    transform: scale(1.1);
+  } */
+
+  .description{
+    word-wrap: break-word;
+      width: 100%;
+  }
+
+
+
+
+
+
+
+  .comments-section {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comments-section h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.comments-list {
+    margin-bottom: 20px;
+}
+
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.comment p {
+    margin: 0;
+}
+
+.comment span {
+    font-style: italic;
+    color: #666;
+}
+
+#commentInput {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#submitComment {
+    padding: 10px 20px;
+    background-color: var(--pcolor);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submitComment:hover {
+    background-color: var(--scolor);
+}
+
+
+
+.image-thumbnails{
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.image-thumbnails img{
+  border: 2px solid var(--scolor);
+  width: auto;
+  height: 100%;
+}
+
+.thumbnail.active {
+  /* border: 2px solid #000; You can customize the border style for the active thumbnail */
+  filter: brightness(30%);
+}

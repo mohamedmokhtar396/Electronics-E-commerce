@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/products.css" />
+  </head>
+  <body>
+    <div class="home">
+
+      <nav>
+
+        <a href="./WishList.html" id="wish-items" style="text-decoration: none;color: white;">
+          <i class="fas fa-heart fa-" ></i>
+        </a>
+        <a href="./Cart.html" id="cart-items" style="text-decoration: none;color: white;">
+          <i class="fas fa-cart-shopping" ></i>
+        </a>
+        
+        <span id="wish-items-count">0</span>
+        <span id="cart-items-count">0</span>
+          <ul>
+              <li><a href="./index.html"><i class="fa-solid fa-house fa-xl"></i>  </a></li>
+              <li class="active"><a href="./products.html">Products</a></li>
+              
+            </ul>
+
+            <div class="para">
+              <p>Shop</p>
+              <p style="color: #eb5e28; ">Now</p>
+              <i class="fas fa-cart-shopping " style="color: #eb5e28;"></i>
+            </div>
+            
+            <ul id="sub" style="position: relative;">
+              <li><a href="./contact.html">Contact US</a></li>
+
+
+              <li><a href="./login.html" id="loginBtn">Log In</a></li>
+                <li><a href="./login.html" id="logoutBtn" style="display: none;">Log Out   <i class="fas fa-sign-out fa-xl" ></i></a></li>
+               
+           
+        </ul>
+      </nav>
+
+    </div>
+
+
+    <div class="choose-category">
+      <ul>
+        <li>All</li>
+        <li>Phones</li>
+        <li>Laptops</li>
+        <li>Headphones</li>
+        <li>Accessories</li>
+      </ul>
+    </div>
+
+    <div class="products">
+      <div class="cards" id="cards">
+       
+      </div>
+    </div>
+
+    <div class="dark-light">
+      <button id="dark"><i class="fas fa-moon fa-2x"></i></button>
+      <button id="light"><i class='fas fa-sun fa-2x'></i></button>
+    </div>
+
+    <div class="popup" id="popup"></div>
+
+
+
+    <script type="module" src="../js/WishAndCartCount.js"></script>
+    <script src="../js/checkLogIn.js"></script>
+    <script type="module" src="../js/products.js"></script>
+    <script src="../js/darklightMode.js"></script>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+</html>

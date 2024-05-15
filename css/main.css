@@ -1,0 +1,383 @@
+/* navbar */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  /* .home {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/imgs/background/\ \(3\).jpg");
+    background-size: cover;
+  } */
+  /* fonts and color*/
+  :root{
+    --title:28px;
+    --header:22px;
+    --para:18px;
+    --pcolor:#eb5e28;
+    --scolor:black;
+    --tcolor:white;
+  }
+
+
+  .home {
+    width: 100%;
+    height: 4rem;
+    /* background-image: url("../imgs/background/\(3\).jpg"); */
+    background-size: cover;
+  }
+  nav {
+    /* position: fixed; */
+    /* z-index: 1; */
+    /* top: 20px; */
+    padding-block: 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    border-bottom: 10px solid #eb5e28;
+    color: white;
+    width: 100%;
+    height: 7%;
+    
+  }
+  nav ul {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+
+  
+  nav ul li {
+    border-radius: 15px;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: 550;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  nav ul li:hover {
+    /* background: #eb5e28; */
+    /* font-size: 1.5em;
+    box-shadow: 0px 0px 20px #eb5e28; */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.2s ease-in-out;
+}
+nav ul li:hover a {
+    /* color: rgb(255, 255, 255); */
+    color: var(--pcolor);
+    /* border-bottom: 2px solid #eb5e28; */
+  }
+
+  /* cart and wish icons  of navbar*/
+  nav #wish-items{
+    font-size: 25px;
+    position: absolute;
+    left: 29rem;
+    top: 1.3rem;
+    /* transform: translate(50% + 50%); */
+  }
+  nav #wish-items i{
+    transition: 0.3s;
+
+  }
+  nav #wish-items i:hover{
+    color: var(--pcolor);
+  }
+  nav #wish-items-count{
+    position: absolute;
+    left: 29.8rem;
+    top: 0.5rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: var(--pcolor);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  nav #cart-items{
+    font-size: 25px;
+    position: absolute;
+    left: 33rem;
+    top: 1.3rem;
+    /* transform: translate(50% + 50%); */
+  }
+  nav #cart-items i{
+    transition: 0.3s;
+  }
+  nav #cart-items i:hover{
+    color: var(--pcolor);
+  }
+  nav #cart-items-count{
+    position: absolute;
+    left: 33.8rem;
+    top: 0.5rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: var(--pcolor);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  button{
+    border: none;
+    transition: 0.4s;
+  }
+  
+  .para{
+    width: 20%;
+      /* height: 90px; */
+      /* position: absolute; */
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      top: 20%;
+      left: 2%;
+      font-size: 52px;
+      color: #ffffff;
+  
+    /* overflow: hidden; */
+  }
+  #loginBtn{
+    background-color: #eb5e28 ;
+    color: black; 
+    padding: 0.5rem; 
+    border-radius: 2rem;
+  }
+  #loginBtn:hover{
+    color: #eb5e28 ;
+    background-color: white; 
+    
+  }
+  #logoutBtn{
+    background-color: white;
+    color: red;
+    padding: 0.5rem; 
+    border-radius: 2rem;
+  }
+  #logoutBtn:hover{
+    color: white;
+    background-color: red;
+    
+  }
+
+
+  /* end navbar */
+
+  .active{
+    border-bottom:5px solid #eb5e28;
+  }
+
+
+  .popup {
+    padding: 1rem;
+    position: fixed;
+    top: -2rem;
+    z-index: 5;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    min-width: 22rem;
+    max-width: 100%;
+    padding-block: 2rem;
+    /* height: 10rem; */
+    border-radius: 1rem;
+    background-color: var(--pcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    visibility: hidden;
+  }
+
+
+  /* dark and light mode */
+  .dark-light button{
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+  #dark:hover{
+    background-color: #000000a4;
+    color: white;
+  }
+  #light:hover{
+    /* background-color: rgb(255, 255, 255); */
+    color: gold;
+  
+  }
+  .seller-icon{
+    position: absolute;
+    right: 2rem;
+    top: 6rem;
+    background-color: var(--pcolor);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3rem;
+    transition: 0.4s;
+  }
+  .seller-icon a{
+    color: white;
+    transition: 0.4s;
+  }
+  .seller-icon:hover {
+    background-color: var(--scolor);  
+    transform: scale(0.9,0.9);
+  }
+  .seller-icon:hover a{
+    color: var(--pcolor);
+  }
+
+
+  /* go back button */
+  #return {
+
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    font-size: 3rem;
+    transition: 0.3s;
+}
+#return:hover{
+    color: var(--pcolor);
+}
+
+
+/* chatBot */
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.chat-container-small {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: height 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chat-container-large {
+  height: 400px;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  background-color: var(--scolor);
+}
+
+.bot-photo {
+  width: 60px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.bot-name {
+  font-weight: bold;
+  color: var(--pcolor);
+}
+
+.expand-btn {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.chat-display {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+}
+
+.user-input {
+  flex: 1;
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.send-btn {
+  padding: 5px 10px;
+  border: none;
+  background-color: var(--pcolor);
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.input-container.hidden {
+  display: none;
+}
+
+.chat-message {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  max-width: 70%;
+  width: fit-content;
+  padding-inline: 1rem;
+}
+
+.chat-message-bot {
+  background-color: var(--scolor);
+  color: var(--tcolor);
+  align-self: flex-end;
+}
+
+.chat-message-user {
+  background-color: var(--pcolor);
+  color: white;
+}
+.hidden{
+  display: none;
+}

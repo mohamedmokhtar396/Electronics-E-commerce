@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/addProduct.css">
+</head>
+<body>
+    
+    <div class="home">
+
+        <nav>
+            <ul>
+                <li><a href="./index.html"><i class="fa-solid fa-house fa-xl"></i>  </a></li>
+                <li><a href="./products.html">Products</a></li>
+                
+            </ul>
+            
+            <div class="para">
+                <p>Shop</p>
+                <p style="color: #eb5e28; ">Now</p>
+                <i class="fas fa-cart-shopping " style="color: #eb5e28;"></i>
+            </div>
+            
+            <ul id="sub" style="position: relative;">
+                
+                <li><a href="./contact.html">Contact US</a></li>
+                <li><a href="./login.html" id="loginBtn">Log In</a></li>
+                <li><a href="./login.html" id="logoutBtn" style="display: none;">Log Out   <i class="fas fa-sign-out fa-xl" ></i></a></li>
+               
+            </ul>
+        </nav>
+
+        </div>
+      <!-- ************************* -->
+      <!-- ************************* -->
+      <a href="#" id="return"><i class="fas fa-arrow-left"></i></a>
+
+      <!-- ************************* -->
+      <!-- ************************* -->
+
+      
+        <div class="signup-form">
+          <h1>Add Product</h1>
+          <form>
+            <label>Product Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Product Name"/>
+            <!-- <br> -->
+            <label>Product Description</label>
+            <input type="text" name="Description" id="description" placeholder="description of product"/>
+            <!-- <br> -->
+            <label>Product Category</label>
+            <select name="category" id="category">
+                <option value="Phones">Phones</option>
+                <option value="Laptops">Laptops</option>
+                <option value="Headphones">Headphones</option>
+                <option value="Accessories">Accessories</option>
+
+            </select>
+            <!-- <br> -->
+            <label>Product Quantity</label>
+            <input type="number" name="quantity" id="quantity" placeholder="1 or more" />
+            <!-- <br> -->
+
+            <label>Price $</label>
+            <input type="number" name="price" id="price" placeholder="$" />
+            
+            <label>Discount %</label>
+            <input type="number" name="discount" id="discount" placeholder="%" />
+
+            <label >Product Img</label>
+            <input type="file" id="productImg" accept="image/*" multiple>
+          </form>
+          <button id="submit">Add</button>
+        </div>
+      
+
+
+    <div class="popup" id="popup"></div>
+
+    <!-- <script src="../js/signup.js"></script> -->
+    <script src="../js/checkLogIn.js"></script>
+    <script type="module" src="../js/firebase.js"></script>
+    <script type="module" src="../js/addProduct.js"></script>
+    
+  
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+</html>
