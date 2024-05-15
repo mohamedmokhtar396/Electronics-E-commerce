@@ -84,7 +84,7 @@ registerBtn.addEventListener("click", function (e) {
   if (confirmPassword.value != 0) {
     if (confirmPassword.value != password.value) {
       confirmPassword.style.border ='3px solid red' 
-      popupError('write same as password','#e55555')
+      popupError("Password Dosen't Match!",'#e55555')
       checkConfirmPassword=false;
     }else{
       checkConfirmPassword=true;
